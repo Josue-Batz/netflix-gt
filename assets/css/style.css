@@ -68,7 +68,7 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, black 0%, transparent 100%);
+    background: linear-gradient(to top, black 0%,black 40%, transparent 100%);
 }
 .featured-actions{
     height: 100px;
@@ -77,8 +77,45 @@ a{
     align-items: center;
     padding-bottom: 2em;
 }
-.featured-actions .button{
-    
+.featured-actions .Button{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px 1em 5px .5em;
+    border: none;
+    border-radius: 3px;
+}
+.featured-actions .Button::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.featured-actions .button-secondary{
+    background: none;
+    color: #fff;
+    font-size: 1.1em;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+}
+.featured-actions .button-secondary::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.featured-actions .icon-plus::before{
+    background: url('/images/icons/plus.svg');
+}
+.featured-actions .icon-play::before{
+    background: url('/images/icons/play.svg');
+}
+.featured-actions .icon-info::before{
+    background: url('/images/icons/info.svg');
 }
 .tags{
     display: flex;
@@ -98,4 +135,37 @@ a{
 }
 .tag:first-child::before{
     display: none;
+}
+
+/* ***************** PELÍCULAS - MAIN BODY */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.list{
+    padding: 0 1em;
+}
+.list-content{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.list-item{
+   display: inline-block; 
+   margin-left: 10px;
+}
+.list-item:first-child{
+    margin: 0;
+}
+
+/* ************ FOOTER *******************  */
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+.tab-list{
+    
 }
