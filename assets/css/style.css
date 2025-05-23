@@ -1,24 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 @font-face {
-    font-family: "Netflix";
-    src: url('/fonts/AvenirNextLTPro-Regular.otf');
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
     font-weight: 400;
     font-size: normal;
 }
 @font-face {
-    font-family: "Netflix";
-    src: url('/fonts/AvenirNextLTPro-Bold.otf');
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Bold.otf');
     font-weight: 700;
     font-size: normal;
-}
-
-body{
-  background-color: black;
-  color: #fff;
-  font-family: Netflix;
 }
 .credits {
     font-family: system-ui;
@@ -31,6 +21,17 @@ body{
 .credits a {
     color: #F865B0;
     text-decoration: none;
+}
+
+/* DISEÑOS GENERALES PARA TODA LA PÁGINA Y ELEMENTOS */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: black;
+  color: #fff;
+  font-family: Netflix;
 }
 a{
     color: white;
@@ -59,6 +60,7 @@ a{
 .featured{
     margin-top: -90px;
     position:relative;
+    overflow: hidden;
 }
 .featured > video{
     height: 500px;
@@ -71,21 +73,25 @@ a{
     background: linear-gradient(to top, black 0%,black 40%, transparent 100%);
 }
 .featured-actions{
-    height: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 2em;
+
 }
-.featured-actions .Button{
-    background-color: #fff;
+.featured-actions button{
+    margin-top: 20px;
+}
+.featured-actions .button{
+    background: #fff;
     display: flex;
     align-items: center;
+    margin-top: 20px;
     padding: 5px 1em 5px .5em;
     border: none;
     border-radius: 3px;
 }
-.featured-actions .Button::before{
+.featured-actions .button::before{
     content: '';
     display: inline-block;
     width: 25px;
@@ -109,18 +115,18 @@ a{
     margin-bottom: 5px;
 }
 .featured-actions .icon-plus::before{
-    background: url('/images/icons/plus.svg');
+    background: url('../../images/icons/plus.svg');
 }
 .featured-actions .icon-play::before{
-    background: url('/images/icons/play.svg');
+    background: url('../../images/icons/play.svg');
 }
 .featured-actions .icon-info::before{
-    background: url('/images/icons/info.svg');
+    background: url('../../images/icons/info.svg');
 }
 .tags{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     list-style: none;
     padding: 0;
 }
@@ -141,14 +147,14 @@ a{
 main{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 20px;
 }
 .list{
-    padding: 0 1em;
+    padding: 1em;
 }
 .list-content{
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x:auto;
 }
 .list-item{
    display: inline-block; 
@@ -160,12 +166,39 @@ main{
 
 /* ************ FOOTER *******************  */
 .footer{
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: black;
+    padding: 1em 0;
 }
 .tab-list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: #6e6e6e;
+    padding-bottom: 1em;
+}
+.tab-list a{
+    color: #6e6e6e;
+}
+.tab-item{
+    text-align: center;
+    fill: #6e6e6e;
+    font-size: .9em;
+}
+.tab-item:hover :is(path, span){
+    fill: white;
+    color: #fff;
+}
+.tab-item svg{
+    display: block;
+    margin: auto;
     
+}
+.tab-icon path{
+    fill: #6e6e6e;
 }
