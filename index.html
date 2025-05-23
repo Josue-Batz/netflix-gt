@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-50x50.png">
-  <title>Leonidas Esteban | Recreando Netflix</title>
-  <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   
 </head>
 
 <body>
   <header class="header">
-    <img class="imagen-header" src="/images/logo-netflix.png" alt="Logo netflix">
+    <img class="imagen-header" src="images/logo-netflix.png" alt="Logo netflix">
     <nav>
       <ul class="navigation">
         <li class="navigation-item"><a href="#">Series</a></li>
@@ -23,8 +23,11 @@
   </header>
 
   <div class="featured">
-    <video src="./images/matrix.mp4" autoplay></video>
+    <div class="featured_video">
+    <video src="./images/matrix.mp4" autoplay loop></video>
+    </div>
     <div class="featured-details">
+      
       <ul class="tags">
         <li class="tag">Surrealista</li>
         <li class="tag">Distópico</li>
@@ -32,11 +35,14 @@
         <li class="tag">Siniestro</li>
         <li class="tag">Emocionante</li>
       </ul>
-
+      
       <div class="featured-actions">
-        <button class="button-secondary icon-plus">Mi lista</button>
-        <Button class="button icon-play">Reproducir</Button>
-        <Button class="button-secondary icon-info">Info</Button>
+        <div class="title_video"><h1>MATRIX</h1></div>
+        <div class="featured-actions_buttons">
+          <button class="button-secondary icon-plus">Mi lista</button>
+          <Button class="button icon-play">Reproducir</Button>
+          <Button class="button-secondary icon-info">Info</Button>
+        </div>
       </div>
     </div>
   </div>
@@ -64,6 +70,9 @@
         <div class="list-item">
           <a href="#"><img src="./images/covers/santa.png" alt="Bob Esponja la Película"></a>
         </div>
+        <div class="list-item">
+          <a href="#"><img src="./images/covers/dragon.png" alt="Bob Esponja la Película"></a>
+        </div>
       </div>
     </div>
 
@@ -89,6 +98,9 @@
         <div class="list-item">
           <a href="#"><img src="./images/covers/santa.png" alt="Bob Esponja la Película"></a>
         </div>
+        <div class="list-item">
+          <a href="#"><img src="./images/covers/dragon.png" alt="Bob Esponja la Película"></a>
+        </div>
       </div>
     </div>
     
@@ -110,6 +122,9 @@
         </div>
         <div class="list-item">
           <a href="#"><img src="./images/covers/john.png" alt="Bob Esponja la Película"></a>
+        </div>
+        <div class="list-item">
+          <a href="#"><img src="./images/covers/dragon.png" alt="Bob Esponja la Película"></a>
         </div>
         <div class="list-item">
           <a href="#"><img src="./images/covers/santa.png" alt="Bob Esponja la Película"></a>

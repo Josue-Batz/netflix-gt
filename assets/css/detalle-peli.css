@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Bold.otf');
+    font-weight: 700;
+    font-size: normal;
+}
+    .credits {
+      font-family: system-ui;
+      background: #212429;
+      font-size: 11px;
+      color: white;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+    .credits a {
+      color: #F865B0;
+      text-decoration: none;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: black;
+  color: #fff;
+  font-family: Netflix;
+  max-width: 800px;
+  margin: auto;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    position: relative;
+    z-index: 2;
+}
+.header .icono{
+    margin: 20px;
+    padding-left: 25px;
+}
+.featured-img{
+    width: 100%;
+    height: 65vh;
+}
+.featured-details{
+    margin: 0 20px 20px 20px;
+}
+.featured-details .titulo-pelicula{
+    font-family: Netflix;
+    font-size: 17px;
+}
+.detalles-peliculas .detalles-listado{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.detalles-listado .item{
+    padding-left: 15px;
+    color: #6e6e6e;
+}
+.detalles-listado .item-porcentaje{
+    color: green;
+    font-weight: bold;
+}
+.detalles-listado .item-calidad{
+    color: #c7c7c7;
+    border: 1px solid #6e6e6e;
+    padding: 3px;
+}
+.featured-actions{
+    margin: 0 20px;
+}
+.featured-actions .button{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 5px 1em 5px .5em;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    font-weight: bold;
+} 
+.featured-actions .button-secondary{
+    background: #323232;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px 1em 5px .5em;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+.featured-actions img{
+    padding-right: 15px;
+}
+
+main{
+    margin: 0 20px;
+}
+.descripciones{
+    margin-top: 20px;
+    color: #bcbbbb;
+    font-size: 20px;
+}
+.descripcion-autores{
+    padding-top: 20px;
+    color: #6e6e6e;
+    font-size: 17px;
+}
+.descripcion-director{
+    color: #6e6e6e;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+/* Diseño items de Lista, like y Compartir */
+
+.acciones-peli{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 5px solid red;
+    width: 30%;
+}
+
+.acciones-peli .accion{
+    padding: 20px;
+    margin-left: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #6e6e6e;
+}
+
+
+/* DISEÑO PELÍCULAS */
+.peliculas-recomendaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list{
+    padding: 1em;
+}
+.list-title{
+    padding: 20px 0;
+}
+.list-content{
+    white-space: nowrap;
+    overflow-x:auto;
+}
+.list-item{
+   display: inline-block; 
+   margin-left: 10px;
+}
+.list-item:first-child{
+    margin: 0;
+}
+
+/* Estilos FOOTER - Codigo reutilizado de INDEX */
+.footer{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 1em 0;
+    z-index: 100;
+}
+.tab-list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: #6e6e6e;
+    padding-bottom: 1em;
+}
+.tab-list a{
+    color: #6e6e6e;
+}
+.tab-item{
+    text-align: center;
+    fill: #6e6e6e;
+    font-size: .9em;
+}
+.tab-item:hover :is(path, span){
+    fill: white;
+    color: #fff;
+}
+.tab-item svg{
+    display: block;
+    margin: auto;
+    
+}
+.tab-icon path{
+    fill: #6e6e6e;
+}
